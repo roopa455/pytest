@@ -1,0 +1,40 @@
+"""
+Enter add a new todo item at same indentation (or split it at the cursor)
+Tab increase indentation (from anywhere in the line)
+Ctrl+d/Cmd+d toggle item done
+Ctrl+Shift+a/Cmd+Shift+a move done items into Archive project (repects nested tasks)
+"""
+- test cases
+    - Api
+        - Test @done
+        - APN
+            - Get and Post APN
+            - Delete an APN from the Network
+            - Get and update specific APN
+        - ENodeB
+            - Get and post enodeb in the network
+            - Delete and unregister an enodeb
+            - Get and create a specific enodeb configuration
+            - Get state from enodeb device
+           
+        - Network
+            - N0001: Get Network @done
+            - N0002: Post Network 
+            - N0003: Delete Network @done
+            - N0004: Get Description Network @done
+            - 
+            - 
+        - Policydb
+            - Get and Create policy QOS profile in lte netw
+            - Delete policy QOS profile  in LTE Network
+
+        - subscriberdb
+            - 
+- Format:
+    - make the url more dynamic @done
+    - Fix Format folder @done
+    - Create yaml folder @done
+    - 
+
+Archive:
+    - API

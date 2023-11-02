@@ -1,0 +1,11 @@
+
+Starting Post Network test
+{"message":"Not Found"}
+Post Network Test failed. The response code is:
+404
+
+Verifying added Network is present:
+
+Network is not added. 
+ 
+Post APN Test ended

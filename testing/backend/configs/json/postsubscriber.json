@@ -1,0 +1,1 @@
+[{"active_apns":["test03"],"active_policies":["test_policy"],"forbidden_network_types":["EPC"],"id":"IMSI001010000000002","name":"IMSI001010000000002","lte":{"auth_algo":"MILENAGE","auth_key":"Rltc6LGZtJ+qXwou4jimvA==","auth_opc":"Rltc6LGZtJ+qXwou4jimvA==","state":"ACTIVE","sub_profile":"default"}}]

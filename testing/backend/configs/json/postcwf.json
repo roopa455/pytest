@@ -1,0 +1,59 @@
+{
+  "carrier_wifi": {
+    "allowed_gre_peers": [
+      {
+        "ip": "192.168.128.0/32",
+        "key": 1
+      }
+    ],
+    "gateway_health_configs": {
+      "cpu_util_threshold_pct": 0.9,
+      "gre_probe_interval_secs": 5,
+      "icmp_probe_pkt_count": 3,
+      "mem_util_threshold_pct": 0.9
+    },
+    "ipdr_export_dst": {
+      "ip": "192.168.128.88",
+      "port": 2040
+    }
+  },
+  "description": "Sample Gateway description",
+  "device": {
+    "hardware_id": "22ffea10-7fc4-4427-975a-b9e4ce8f6f4d",
+    "key": {
+      "key": "MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE+Lckvw/eeV8CemEOWpX30/5XhTHKx/mm6T9MpQWuIM8sOKforNm5UPbZrdOTPEBAtGwJB6Uk9crjCIveFe+sN0zw705L94Giza4ny/6ASBcctCm2JJxFccVsocJIraSC",
+      "key_type": "SOFTWARE_ECDSA_SHA256"
+    }
+  },
+  "id": "gw1",
+  "magmad": {
+    "autoupgrade_enabled": true,
+    "autoupgrade_poll_interval": 300,
+    "checkin_interval": 60,
+    "checkin_timeout": 10,
+    "dynamic_services": [],
+    "feature_flags": {
+      "newfeature1": true,
+      "newfeature2": false
+    },
+    "logging": {
+      "aggregation": {
+        "target_files_by_tag": {
+          "enodebd": "/var/log/enodebd.log",
+          "mme": "/var/log/mme.log",
+          "otherlog": "/var/log/otherlog.log"
+        },
+        "throttle_interval": "1m",
+        "throttle_rate": 1000,
+        "throttle_window": 5
+      },
+      "event_verbosity": 0,
+      "log_level": "DEBUG"
+    },
+    "vpn": {
+      "enable_shell": false
+    }
+  },
+  "name": "Sample Gateway",
+  "tier": "default"
+}

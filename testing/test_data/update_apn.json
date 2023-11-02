@@ -1,0 +1,20 @@
+{
+  "apn_configuration": {
+    "ambr": {
+      "max_bandwidth_dl": 200000,
+      "max_bandwidth_ul": 100000
+    },
+    "gbr_ambr": {
+      "max_bandwidth_dl": 2000000,
+      "max_bandwidth_ul": 1000000
+    },
+    "pdn_type": 0,
+    "qos_profile": {
+      "class_id": 9,
+      "preemption_capability": true,
+      "preemption_vulnerability": false,
+      "priority_level": 15
+    }
+  },
+  "apn_name": "test_lte01"
+}

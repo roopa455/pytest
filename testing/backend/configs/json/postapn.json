@@ -1,0 +1,16 @@
+{
+  "apn_configuration": {
+      "ambr": {
+        "max_bandwidth_dl": 10000000,
+        "max_bandwidth_ul": 10000000
+      },
+      "pdn_type": 0,
+      "qos_profile": {
+        "class_id": 9,
+        "preemption_capability": false,
+        "preemption_vulnerability": false,
+        "priority_level": 15
+      }
+    },
+"apn_name": "test_apn"
+}

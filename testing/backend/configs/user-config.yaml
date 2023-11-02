@@ -1,0 +1,34 @@
+# 5G
+MNC:
+MCC:
+
+IP_ADDR: 
+
+
+
+#API
+network: 'test1'
+network_apn: 'test1'
+network_test: 'swaggertest2'
+gateway_id: 'gateway_id'
+get_apn: 'test03'
+apn_name: 'test_apn'
+qos_profile: 'test_script'
+base_name: 'test_base'
+page_size: ''
+page_token: ''
+streams: 'streams'
+stream_name: 'stream_name'
+events: 'events'
+event_type: 'event_type'
+tags: 'tags'
+hardware_id: 'hardware_id'
+hw_ids: 'hw_ids'
+Efrom: 'from'
+size: 'size'
+start: 'start'
+end: 'end'
+#subscriberdb
+subscriber_id: 'IMSI001010000000002'
+network_subscriber: 'test1'
+subscriber_name: 'IMSI001010000000002'

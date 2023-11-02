@@ -1,0 +1,9 @@
+{
+  "assigned_subscribers": [
+    "IMSI001010000000002"
+  ],
+  "name": "test_base",
+  "rule_names": [
+    "test_policy1"
+  ]
+}

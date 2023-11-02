@@ -1,0 +1,45 @@
+
+import os, time, sys, random
+import pytest
+utilPath = '../swagger_utilities'                # Custom Path for modules
+sys.path.append(utilPath)                   # Edit env info (path for modules)
+import swagger_utils as utils                   # Import our own modules
+SwaggerUtils = utils.Swagger_Utils()                # Instantiate the class
+
+
+def setup_env():
+    SwaggerUtils.prCyan(f'Setting up test environment') 
+    global cert, key
+
+
+def tc_head(msg, log_loc = ""):
+    global startTime
+    startTime = int(time.time())
+    SwaggerUtils.prPurple(f'\nStarting test for {msg} E2E Workflow')
+
+def tc_tail(msg):
+    endTime = int(time.time())
+    elapsedTime = endTime - startTime
+    SwaggerUtils.prPurple(f'Completed test for {msg} E2E Workflow in {elapsedTime} seconds')
+
+
+@pytest.mark.swagger_workflows
+def test_swagger_scenarios():
+    try:
+        assert SwaggerUtils.add_new_network(description="Add new network", id="test_lte", name="test_lte")  is True, tc_tail('added new network')
+        assert SwaggerUtils.add_new_gateway(description="Add new Gateway", network_id="test_lte", hardware="", key="") is True, tc_tail("added new gateway")
+    except AssertionError as ae:
+        SwaggerUtils.prRed(f'AssertionError occurred: {ae}')
+        # Handle assertion failure
+    except Exception as e:
+        SwaggerUtils.prRed(f'An exception occurred while executing the test: {e}')
+        # Handle other exceptions
+
+@pytest.mark.swagger_workflows
+def test_setup():
+    setup_env()
+
+def test_run_swagger_workflows():
+    test_swagger_scenarios()
+
+

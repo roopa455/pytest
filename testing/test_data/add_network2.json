@@ -1,0 +1,40 @@
+{
+  "description": "Foobar network",
+  "dns": {
+    "dhcp_server_enabled": true,
+    "enable_caching": false,
+    "local_ttl": 0,
+    "records": [
+      {
+        "a_record": [
+          "192.88.99.142"
+        ],
+        "aaaa_record": [
+          "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
+        ],
+        "cname_record": [
+          "cname.example.com"
+        ],
+        "domain": "example.com"
+      }
+    ]
+  },
+  "features": {
+    "features": {
+      "featureName1": "featureProp1",
+      "featureName2": "featureProp2"
+    }
+  },
+  "id": "network_1",
+  "name": "Sample Network",
+  "sentry_config": {
+    "exclusion_patterns": [],
+    "number_of_lines_in_log": 0,
+    "sample_rate": 1,
+    "upload_mme_log": false
+  },
+  "state_config": {
+    "sync_interval": 60
+  },
+  "type": "LTE"
+}

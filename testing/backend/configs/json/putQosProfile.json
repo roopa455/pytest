@@ -1,0 +1,15 @@
+{
+  "arp": {
+    "preemption_capability": true,
+    "preemption_vulnerability": false,
+    "priority_level": 15
+  },
+  "class_id": 9,
+  "gbr": {
+    "downlink": 0,
+    "uplink": 0
+  },
+  "id": "test_script",
+  "max_req_bw_dl": 1,
+  "max_req_bw_ul": 1
+}
